@@ -1,2 +1,1 @@
-# nmos-action-test
-Testing GitHub actions for NMOS repos
+This directory is for RAML 1.0 APIs
