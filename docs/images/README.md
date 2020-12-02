@@ -1,1 +1,1 @@
-This directory is for images used in documentation
+# This directory is for images used in documentation
