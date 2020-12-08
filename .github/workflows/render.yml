@@ -11,8 +11,8 @@ jobs:
           node-version: '8.x'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: make distclean
-      - run: make build-tools
-      - run: make build
+        - run: make distclean
+        - run: make build-tools
+        - run: make build
 
 
