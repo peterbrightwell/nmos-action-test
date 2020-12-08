@@ -9,10 +9,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '8.x'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        - run: make distclean
-        - run: make build-tools
-        - run: make build
+      - run: make distclean
+      - run: make build-tools GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
+      - run: make build GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
 
 
