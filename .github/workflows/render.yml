@@ -9,9 +9,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '8.x'
-      - run: echo ${{ secrets.GITHUB_TOKEN }} | tr a-zA-Z0-9 x
       - run: make distclean
-      - run: make build-tools GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
-      - run: make build GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
+      - run: make build-tools
+      - run: make build
 
 
