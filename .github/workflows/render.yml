@@ -4,13 +4,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
+      - name: Uses Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
       - run: make distclean
-      - run: pip3 install setuptools
       - run: make build-tools
       - run: make build
 
