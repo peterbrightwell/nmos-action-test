@@ -10,6 +10,7 @@ jobs:
         with:
           node-version: '12.x'
       - run: make distclean
+      - run: pip3 install setuptools
       - run: make build-tools
       - run: make build
 
