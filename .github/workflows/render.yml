@@ -16,6 +16,7 @@ jobs:
           python-version: '3.x'
       - run: make distclean
       - run: make build-tools
+      - run: sudo pip3 install setuptools jsonref pathlib
       - run: make build
 
 
