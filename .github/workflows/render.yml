@@ -25,6 +25,8 @@ jobs:
         run: make build
       - name: Remove source-repo
         run: rm -rf source-repo/
+      - name: Echo github.ref
+        run: echo ${{ github.ref }}
       - name: Add and Commit
         uses: EndBug/add-and-commit@v5
         with:
@@ -34,8 +36,6 @@ jobs:
           add: '.'
         env:
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Echo github.ref
-        run: echo ${{ github.ref }}
       - name: Push
         uses: ad-m/github-push-action@master
         with:
