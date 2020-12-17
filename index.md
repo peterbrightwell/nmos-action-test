@@ -52,8 +52,6 @@ The links to documentation, API and examples below and for DOCS and SPEC in the 
 
 ## Development Branches
 
-[publish-test](branches/publish-test/)
-
 [v1.0-dev](branches/v1.0-dev/)
 
 ##  Published Releases/Tags

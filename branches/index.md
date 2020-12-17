@@ -4,6 +4,4 @@
 
 ## Development Branches
 
-[publish-test](publish-test/)
-
 [v1.0-dev](v1.0-dev/)
