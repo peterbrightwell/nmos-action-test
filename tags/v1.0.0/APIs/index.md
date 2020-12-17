@@ -2,6 +2,6 @@
 
 # {{ site.github.project_tagline }}
 
-## Published Releases/Tags
+## APIs for release/tag v1.0.0
 
-[v1.0.0](v1.0.0/)
+- [TemplateAPI](TemplateAPI.html)

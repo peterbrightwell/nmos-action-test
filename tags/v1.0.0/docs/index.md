@@ -2,6 +2,6 @@
 
 # {{ site.github.project_tagline }}
 
-## Published Releases/Tags
+## Documentation for release/tag v1.0.0
 
-[v1.0.0](v1.0.0/)
+- [Overview](1.0._Overview.md)
