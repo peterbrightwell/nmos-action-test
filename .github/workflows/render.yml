@@ -20,8 +20,15 @@ jobs:
         run: make build
       - name: Remove source-repo
         run: rm -rf source-repo/
-      - name: Commit
-        run: git commit --all -m "Build for GitHub Pages"
+      - name: Add and Commit
+        uses: EndBug/add-and-commit@v5
+        with:
+          author_name: AMWA
+          author_email: info@amwa.tv
+          message: "Build for Github Pages"
+          add: '.'
+        env:
+           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Push
         uses: ad-m/github-push-action@master
         with:
