@@ -1,5 +1,10 @@
 name: Render
-on: [push]
+on:
+  push:
+    branches:
+      gh-pages
+  schedule:
+     - cron: '0,10,20,30,40,50 * * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
