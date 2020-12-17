@@ -1,7 +1,7 @@
 name: Render
 on:
   schedule:
-     - cron: '0/5 * * * *'
+     - cron: 0/5 * * * *
   push:
     branches:
       gh-pages
