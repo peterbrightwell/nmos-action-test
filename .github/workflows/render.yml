@@ -25,8 +25,6 @@ jobs:
         run: make build
       - name: Remove source-repo
         run: rm -rf source-repo/
-      - name: Echo github.ref
-        run: echo ${{ github.ref }}
       - name: Add and Commit
         uses: EndBug/add-and-commit@v5
         with:
@@ -34,6 +32,7 @@ jobs:
           author_email: info@amwa.tv
           message: "Build for Github Pages"
           add: '.'
+          branch: gh-pages
         env:
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Push
