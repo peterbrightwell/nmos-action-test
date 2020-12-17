@@ -17,5 +17,6 @@ jobs:
       - run: make distclean
       - run: make build-tools
       - run: make build
+      - run: make push
 
 
