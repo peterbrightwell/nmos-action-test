@@ -1,7 +1,5 @@
 name: Lint
-on:
-  schedule:
-    - cron: '*/5 * * * *'
+on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,6 +9,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
-      - run: make distclean
+      - github action schedulerun: make distclean
       - run: make build-tools
       - run: make lint
